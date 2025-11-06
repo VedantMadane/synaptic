@@ -1,0 +1,52 @@
+Statistics of the flow:
+55 bars total
+out of which
+-50 bars (warm-up period for MA(50))
+out of which
+305 bars available for trading
+out of which
+9 MA crossovers detected
+out of which
+-7 signals BLOCKED by RSI filter (78%)
+out of which
+2 trades executed (22%)
+
+Backtest executed only 2 trades out of 9 potential MA crossover signals because the RSI filter blocked 7 of them.
+
+Both trades were lossy:
+
+Trade 1 (LONG): Lost -$10.73
+
+    Entered at $108.79 (near the peak)
+
+    Market immediately crashed -10.64%
+
+    Exited at $98.09
+
+    This was the WORST possible timing
+
+Trade 2 (SHORT): Lost -$0.01
+
+    Entered at $98.09 (the absolute bottom)
+
+    Market had no more downside
+
+    Fees ate the tiny movement
+
+
+Results:
+Starting: $100,000.00
+Ending: $99,989.26
+PnL: -$10.74
+Trades: 2
+Max Drawdown: -0.01%
+
+Suggested improvement based on my observation:
+
+Adding a 2% stop loss: Trade 1 would have lost -$2.00 instead of -$10.73 (78% improvement)
+
+Adding a 1% take profit: Trade 1 hit $109.91 (+1.03%) and would have exited with +$1.09 profit instead of -$10.73
+
+
+The strategy is working correctly. It's just showing what would happen in this unfavorable 6-hour market period.
+
